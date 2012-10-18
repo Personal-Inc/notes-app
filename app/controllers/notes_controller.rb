@@ -49,7 +49,7 @@ class NotesController < ApplicationController
       _new_note = session[:oauth_sess].create_gem _note_hash
       _new_id = _new_note[:gem_instance_id]
       _new_note[:url] = note_url(_new_id),
-      session[:notes][_new_id] = _new_note
+        session[:notes][_new_id] = _new_note
     else
 		  _new_id = (0...32).map{ "%01x" % rand(2**4) }.join
 		  _new_id.insert(-25, '-').insert(-21, '-').insert(-17, '-').insert(-13,'-')
@@ -193,7 +193,7 @@ class NotesController < ApplicationController
 	def destroy
 		#params[:id]
 		id = params[:id]
-    
+    raise @logged_in
     #Default to note not found
     deleted_item = nil
     notice = "You cannot kill that which doesn not live (i.e., note not found)"
@@ -248,7 +248,7 @@ class NotesController < ApplicationController
   end
 
   def check_token
-    if  params.key?:code and 
+    if  params.key?:code and
         params[:code] != session[:code] and 
         session.key?:redirect_uri and 
         session.key?:state_nonce and 

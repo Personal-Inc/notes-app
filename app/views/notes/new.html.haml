@@ -1,5 +1,6 @@
 -# N0TE NEW VIEW
 = form_tag({:controller => "notes", :action => "create"}, :method => "post") do
-  = label_tag(:new_note_title, "Title")
-  = text_field_tag(:new_note_title)
-  = submit_tag("Create")
+  = label_tag(:new_note_title, "Please log in to make a note!") unless @logged_in
+  = label_tag(:new_note_title, "Title") if @logged_in
+  = text_field_tag(:new_note_title) if @logged_in
+  = submit_tag("Create") if @logged_in

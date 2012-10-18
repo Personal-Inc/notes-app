@@ -1,3 +1,11 @@
+#app-body
+{
+  background-color: #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+
 input[type="text"]
 {
   width: 97%;
@@ -40,12 +48,6 @@ input[type="text"]
   width: 90%;
 }
 
-#app-body
-{
-  background-color: #ddd;
-  border-radius: 4px;
-  padding: 10px;
-}
 
 #note-toolbar
 {

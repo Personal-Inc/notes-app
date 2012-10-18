@@ -6,9 +6,9 @@
         %a.brand(href="") #{@note[:title]}
         = link_to '<i class="icon-trash" ></i> Delete'.html_safe, 
                 note_path(@note_id), 
-                :method => "delete", 
-                :class => "btn btn-danger pull-right", 
-                :confirm => "Are you sure you wish to delete '#{@note[:title]}'"
+                :method => "delete",
+                :action => "destroy",
+                :class => "btn btn-danger pull-right"
         = link_to('<i class="icon-pencil"></i> Edit'.html_safe, 
                 edit_note_path(@note_id), 
                 :class => 'btn btn-info pull-right')

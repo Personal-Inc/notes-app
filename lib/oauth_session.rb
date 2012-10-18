@@ -240,8 +240,10 @@ class OauthSession
     url = URI::encode "#{@@oauth_info[:api_url]}/gems/#{url_suffix}?client_id=#{@@oauth_info[:client_id]}"
     headers = {:Authorization => "Bearer #{@access_token}"}
 
+    raise url.inspect
+
     conn = get_conn url
-    for i in 1..3
+    3.times do
       res = conn.delete(url, {}, headers)
       if res.status == 200 then return JSON.parse(res.body) end
       sleep 1

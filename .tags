@@ -1,0 +1,50 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+AddSessionsTable	db/migrate/20120726060420_add_sessions_table.rb	/^class AddSessionsTable < ActiveRecord::Migration$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Mynotes
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+BrowsingTest	test/performance/browsing_test.rb	/^class BrowsingTest < ActionDispatch::PerformanceTest$/;"	c
+HTTP	config/initializers/fix_ssl.rb	/^  class HTTP$/;"	c	class:Net
+Mynotes	config/application.rb	/^module Mynotes$/;"	m
+Net	config/initializers/fix_ssl.rb	/^module Net$/;"	m
+NotesController	app/controllers/notes_controller.rb	/^class NotesController < ApplicationController$/;"	c
+OAuthSessionError	lib/oauth_session.rb	/^class OAuthSessionError < StandardError$/;"	c
+OauthSession	lib/oauth_session.rb	/^class OauthSession$/;"	c
+api_delete	lib/oauth_session.rb	/^  def api_delete url_suffix$/;"	f	class:OauthSession
+api_get	lib/oauth_session.rb	/^  def api_get url_suffix$/;"	f	class:OauthSession
+api_post	lib/oauth_session.rb	/^  def api_post data_hash$/;"	f	class:OauthSession
+api_put	lib/oauth_session.rb	/^  def api_put url_suffix, data_hash$/;"	f	class:OauthSession
+change	db/migrate/20120726060420_add_sessions_table.rb	/^  def change$/;"	f	class:AddSessionsTable
+check_logout	app/controllers/notes_controller.rb	/^  def check_logout$/;"	f	class:NotesController
+check_session	app/controllers/notes_controller.rb	/^  def check_session$/;"	f	class:NotesController
+check_token	app/controllers/notes_controller.rb	/^  def check_token$/;"	f	class:NotesController
+check_validity	lib/oauth_session.rb	/^  def check_validity$/;"	f	class:OauthSession
+create	app/controllers/notes_controller.rb	/^	def create$/;"	f	class:NotesController
+create_gem	lib/oauth_session.rb	/^  def create_gem note_hash$/;"	f	class:OauthSession
+destroy	app/controllers/notes_controller.rb	/^	def destroy$/;"	f	class:NotesController
+destroy_gem	lib/oauth_session.rb	/^  def destroy_gem gem_instance_id$/;"	f	class:OauthSession
+do_auth	lib/oauth_session.rb	/^  def do_auth data_hash$/;"	f	class:OauthSession
+do_refresh	lib/oauth_session.rb	/^  def do_refresh$/;"	f	class:OauthSession
+edit	app/controllers/notes_controller.rb	/^	def edit$/;"	f	class:NotesController
+gem_list	lib/oauth_session.rb	/^  def gem_list template_id=@@oauth_info[:template_id]$/;"	f	class:OauthSession
+gem_to_note	lib/oauth_session.rb	/^  def gem_to_note gem_hash$/;"	f	class:OauthSession
+get_conn	lib/oauth_session.rb	/^  def get_conn url$/;"	f	class:OauthSession
+get_gem	lib/oauth_session.rb	/^  def get_gem gem_instance_id$/;"	f	class:OauthSession
+handle_err	app/controllers/notes_controller.rb	/^  def handle_err err$/;"	f	class:NotesController
+index	app/controllers/notes_controller.rb	/^	def index$/;"	f	class:NotesController
+initialize	lib/oauth_session.rb	/^  def initialize code, callback$/;"	f	class:OauthSession
+merge_gems	lib/oauth_session.rb	/^  def merge_gems curr_gems, new_gems$/;"	f	class:OauthSession
+new	app/controllers/notes_controller.rb	/^	def new$/;"	f	class:NotesController
+oauth_url	app/helpers/application_helper.rb	/^  def oauth_url callback_uri="#{request.protocol}#{request.host_with_port}#{request.path}"$/;"	f	class:ApplicationHelper
+show	app/controllers/notes_controller.rb	/^	def show$/;"	f	class:NotesController
+swap_gem	app/controllers/notes_controller.rb	/^  def swap_gem old_id$/;"	f	class:NotesController
+test_homepage	test/performance/browsing_test.rb	/^  def test_homepage$/;"	f	class:BrowsingTest
+update	app/controllers/notes_controller.rb	/^	def update$/;"	f	class:NotesController
+update_gem	lib/oauth_session.rb	/^  def update_gem note_hash$/;"	f	class:OauthSession
+use_ssl=	config/initializers/fix_ssl.rb	/^    def use_ssl=(flag)$/;"	f	class:Net.HTTP

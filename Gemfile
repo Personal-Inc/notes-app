@@ -36,7 +36,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'ruby-debug', :group => [:development, :test]
+gem 'ruby-debug19', :group => [:development, :test]
 
 gem 'thin', :group => [:development, :test]
 
@@ -46,7 +46,7 @@ gem 'hpricot'
 
 #gem 'rest-client'
 
-gem 'SystemTimer'
+#gem 'SystemTimer'
 
 gem 'faraday'
 
